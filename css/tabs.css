@@ -92,52 +92,57 @@
   }
 }
 
-/* Regla para estilizar la etiqueta del curso activo */
-.tab-labels input[type="radio"]:checked + label {
+/* Show tab content when corresponding radio button is checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8,
+#tab9:checked ~ #content9,
+#tab10:checked ~ #content10,
+#tab11:checked ~ #content11,
+#tab12:checked ~ #content12,
+#tab13:checked ~ #content13 {
+  display: block;
+}
+
+#tab1:checked ~ .tab-labels label[for="tab1"],
+#tab2:checked ~ .tab-labels label[for="tab2"],
+#tab3:checked ~ .tab-labels label[for="tab3"],
+#tab4:checked ~ .tab-labels label[for="tab4"],
+#tab5:checked ~ .tab-labels label[for="tab5"],
+#tab6:checked ~ .tab-labels label[for="tab6"],
+#tab7:checked ~ .tab-labels label[for="tab7"],
+#tab8:checked ~ .tab-labels label[for="tab8"],
+#tab9:checked ~ .tab-labels label[for="tab9"],
+#tab10:checked ~ .tab-labels label[for="tab10"],
+#tab11:checked ~ .tab-labels label[for="tab11"],
+#tab12:checked ~ .tab-labels label[for="tab12"],
+#tab13:checked ~ .tab-labels label[for="tab13"] {
   color: #ffffff;
+
   &::before {
     width: 100%;
   }
-  .ca {
-    visibility: visible;
-    border-bottom: 1px solid #fff;
-    width: 30px;
-  }
 }
 
-.horizontal-tab-labels {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-bottom: 1px solid var(--color-primary);
-  margin-bottom: calc(var(--gap) * 2);
-
-  /* Ocultar los radio buttons de las facultades */
-  input[type="radio"] {
-    display: none;
-  }
-
-  label {
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    margin-bottom: -1px;
-    font-size: var(--font-size);
-    font-weight: var(--font-weight-bold);
-    transition:
-      background-color 0.3s,
-      border-color 0.3s;
-  }
-}
-
-.horizontal-tab-contents .horizontal-tab-content {
-  display: none;
-  width: 100%;
-}
-
-/* Show content and style active label for horizontal tabs */
-.horizontal-tab-labels input[name="faculty-tabs"]:checked + label {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
-  color: #fff;
+#tab1:checked ~ .tab-labels label[for="tab1"] .ca,
+#tab2:checked ~ .tab-labels label[for="tab2"] .ca,
+#tab3:checked ~ .tab-labels label[for="tab3"] .ca,
+#tab4:checked ~ .tab-labels label[for="tab4"] .ca,
+#tab5:checked ~ .tab-labels label[for="tab5"] .ca,
+#tab6:checked ~ .tab-labels label[for="tab6"] .ca,
+#tab7:checked ~ .tab-labels label[for="tab7"] .ca,
+#tab8:checked ~ .tab-labels label[for="tab8"] .ca,
+#tab9:checked ~ .tab-labels label[for="tab9"] .ca,
+#tab10:checked ~ .tab-labels label[for="tab10"] .ca,
+#tab11:checked ~ .tab-labels label[for="tab11"] .ca,
+#tab12:checked ~ .tab-labels label[for="tab12"] .ca,
+#tab13:checked ~ .tab-labels label[for="tab13"] .ca {
+  visibility: visible;
+  border-bottom: 1px solid #fff;
+  width: 30px;
 }
