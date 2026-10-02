@@ -124,7 +124,7 @@ function createContent(Id, curso) {
                     <p class="m-b-2">${curso.Metodologia}</p>
                   </div>
                 </details>
-                <details name="accordion-group-2" class="m-b-2">
+                <!--<details name="accordion-group-2" class="m-b-2">
                   <summary>
                     <h3>Aportes al proyecto integrador</h3>
                     <span class="arrow">
@@ -137,7 +137,7 @@ function createContent(Id, curso) {
                   <div class="content p-y-2">
                     <p class="m-b-2">${curso.Aportes}</p>
                   </div>
-                </details>
+                </details>-->
               </div>
             </div>
   `;
